@@ -1,7 +1,8 @@
-# Exemple d’implémentation mémoire avec Langraph / Example of Memory Implementation with Langraph
+#  Example sample of Memory Implementation with Langraph
 
 ## Description / Description
 
+## FR
 Ce projet présente une implémentation simple et fonctionnelle de la gestion de mémoire (checkpointing) avec Langraph.
 
 Il illustre deux approches pour la persistance d’état dans un graphe Langraph :
@@ -10,6 +11,9 @@ Il illustre deux approches pour la persistance d’état dans un graphe Langraph
 - persistance avec une base de données SQLite via `SqliteSaver`
 
 L’exemple intègre également un chatbot utilisant le modèle GPT-4o-mini de Langchain-OpenAI, enrichi par des outils personnalisés.
+
+
+## EN
 
 This project demonstrates a simple and functional implementation of memory management (checkpointing) with Langraph.
 
@@ -22,12 +26,14 @@ The example also includes a chatbot using the GPT-4o-mini model from Langchain-O
 
 ## Fonctionnalités / Features
 
+## FR
 - Gestion de l’état conversationnel avec `StateGraph` et typage strict via `TypedDict`
 - Intégration d’un système de checkpoint compatible avec Langraph (nécessite les paramètres `thread_id`, `checkpoint_ns`, `checkpoint_id`)
 - Persistance SQLite pour sauvegarder et recharger l’historique de conversation
 - Interface utilisateur simple via Gradio pour tester le chatbot
 - Chargement sécurisé des variables d’environnement avec `dotenv`
 
+## EN
 - Conversation state management with `StateGraph` and strict typing via `TypedDict`
 - Integration of a checkpoint system compatible with Langraph (requires parameters: `thread_id`, `checkpoint_ns`, `checkpoint_id`)
 - SQLite persistence to save and reload conversation history
